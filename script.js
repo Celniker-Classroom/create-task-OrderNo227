@@ -45,11 +45,11 @@ function showResult(category) {
 
 // 4. The Event Listener with a wrapper
 document.getElementById("exercisesBtn").addEventListener("click", () => {
-    // Find the currently checked radio button
+  
     let selectedRadio = document.querySelector("input[type='radio']:checked");
     
     if (selectedRadio) {
-        // Pass the ID of the radio button (e.g., "legs") as the parameter
+        
         showResult(selectedRadio.id);
     } else {
         document.getElementById("result").textContent = "Please select a muscle group first!";
