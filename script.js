@@ -18,25 +18,25 @@ function showResult(category) {
         for (let i = 0; i < legs.length - 1; i++) {
             exercises += legs[i] + ", ";
         }
-        // Remove the trailing comma and space
+       
         exercises = exercises.slice(0, -2);
     } else if (category === "arms") {
         for (let i = 0; i < arms.length - 1; i++) {
             exercises += arms[i] + ", ";
         }
-        // Remove the trailing comma and space
+       
         exercises = exercises.slice(0, -2);
     } else if (category === "chest") {
         for (let i = 0; i < chest.length - 1; i++) {
             exercises += chest[i] + ", ";
         }
-        // Remove the trailing comma and space
+      
         exercises = exercises.slice(0, -2);
     } else if (category === "core") {
         for (let i = 0; i < core.length - 1; i++) {
             exercises += core[i] + ", ";
         }
-        // Remove the trailing comma and space
+       
         exercises = exercises.slice(0, -2);
     }
 
@@ -54,6 +54,6 @@ document.getElementById("exercisesBtn").addEventListener("click", () => {
         // Pass the ID of the radio button (e.g., "legs") as the parameter
         showResult(selectedRadio.id);
     } else {
-        document.getElementById("result").textContent = "Please select a body part first!";
+        document.getElementById("result").textContent = "Please select a muscle group first!";
     }
 });
