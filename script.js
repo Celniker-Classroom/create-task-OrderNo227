@@ -1,7 +1,3 @@
-// 1. Setup greeting
-let rawName = prompt("What is your name?");
-let username = rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
-document.getElementById("greeting").textContent = "Hi there, " + username + "!"; 
 
 // 2. Data arrays
 let legs = ["barbell back squats", "Romanian deadlifts", "Bulgarian split squats", "leg presses", "walking lunges"];
