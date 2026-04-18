@@ -13,7 +13,7 @@ let core = ["planks", "Russian twists", "bicycle crunches", "leg raises", "mount
 // 3. The function with a parameter
 function showResult(category) {
     let exercises = "";
-
+Rus
     // The 'category' parameter tells the function which array to use
     if (category === "legs") {
         randomNumber = Math.floor(Math.random() * 5) ;
