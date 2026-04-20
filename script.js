@@ -1,4 +1,3 @@
-
 // 2. Data arrays
 let legs = ["barbell back squats", "Romanian deadlifts", "Bulgarian split squats", "leg presses", "walking lunges"];
 let arms = ["bicep curls", "tricep dips", "hammer curls", "skull crushers", "bench press"];
@@ -9,34 +8,40 @@ let core = ["planks", "Russian twists", "bicycle crunches", "leg raises", "mount
 // 3. The function with a parameter
 function showResult(category) {
     let exercises = "";
-Rus
-    // The 'category' parameter tells the function which array to use
+
+    
     if (category === "legs") {
-        randomNumber = Math.floor(Math.random() * 5) ;
-        exercises = legs[randomNumber];
+        for (let i = 0; i < chest.length; i++) {
+            randomNumber = Math.floor(Math.random() * 5) ;
+            exercises += chest[randomNumber] + ", ";
+        }
     
        
         
     } else if (category === "arms") {
-        randomNumber = Math.floor(Math.random() * 5) ;
-        exercises = arms[randomNumber];
+        for (let i = 0; i < chest.length; i++) {
+            randomNumber = Math.floor(Math.random() * 5) ;
+            exercises += chest[randomNumber] + ", ";
+        }
         
        
         
     } else if (category === "chest") {
-        randomNumber = Math.floor(Math.random() * 5) ;
-        exercises = chest[randomNumber];
-        
-      
-    
+        for (let i = 0; i < chest.length; i++) {
+            randomNumber = Math.floor(Math.random() * 5) ;
+            exercises += chest[randomNumber] + ", ";
+        }
+       
     } else if (category === "core") {
-        randomNumber = Math.floor(Math.random() * 5) ;
-        exercises = core[randomNumber];
+       for (let i = 0; i < chest.length; i++) {
+            randomNumber = Math.floor(Math.random() * 5) ;
+            exercises += chest[randomNumber] + ", "
+       };
     }
 
 
-    // Update the UI with the final string
-    document.getElementById("result").textContent = "Best exercises are: " + exercises;
+    
+    document.getElementById("result").textContent = "Your set is: " + exercises;
 }
 
 // 4. The Event Listener with a wrapper
