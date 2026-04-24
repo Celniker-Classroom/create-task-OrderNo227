@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Generator</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +15,7 @@ muscle group.-->
 
 <body>
     <h1>Workout Generator</h1>
+    <div class = "mainStuff">
 <h2 id = "greeting">Hi there, user</h2>
 </body>
 </html>
@@ -22,6 +24,12 @@ muscle group.-->
 <input class = "aligned" type="radio" name="part" id="core" value="3"><label for="BP3">Core</label>
 <input class = "aligned" type="radio" name="part" id="arms" value="3"><label for="BP4">Arms</label>
 
-<h3>Click for your exercise!</h3>
-<button id = "exercisesBtn" enabled>Best exercise!</button>
+<h3 id = "exercise">Click for your exercise/set!</h3>
+<button id = "exercisesBtn" enabled>Best set!</button>
+<button id = "singularExerciseBtn" enabled>Best exercise!</button>
+<button id = "addExerciseBtn" enabled>Add exercise?</button>
+<button id = "resetBtn" enabled>Reset</button> 
+<input type="text" id="newExerciseInput" disabled> 
+ <button id = "submitNewExerciseBtn" disabled>Submit new exercise</button>
 <h2 id = "result"></h2>
+</div>
